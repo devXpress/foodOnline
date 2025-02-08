@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'accounts',
+    'vendor',
     'foodOnline',
     'django.contrib.admin',
     'django.contrib.auth',
