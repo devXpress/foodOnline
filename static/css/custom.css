@@ -16,3 +16,9 @@
     z-index: 99; 
 
 }
+
+.btn-btn-info{
+    padding: 2px 175em;
+    font-size: 12px;
+    cursor: pointer;
+}
