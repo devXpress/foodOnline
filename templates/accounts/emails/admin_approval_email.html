@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Hi {{user.first_name}},
+
+{% if is_approved %}
+Congratulations! your restaurant has been approved. Thank you
+{% else %}
+We are sorry, you are not eligible for publishing in our market place. For more details, contact support@foodonline.com
+{% endif %}
+
+{% endautoescape %}
