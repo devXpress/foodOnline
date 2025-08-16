@@ -20,8 +20,8 @@ class UserForm(forms.ModelForm):
         
 class UserProfileForm(forms.ModelForm):
     address = forms.CharField(widget=forms.TextInput(attrs={'Placeholder':'Start typing...', 'required': 'required'}))
-    profile_picture = forms.FileField(widget=forms.FileInput(attrs={'class':'btn btn-info'}), validators=[allowOnlyImages])
-    cover_photo = forms.FileField(widget=forms.FileInput(attrs={'class':'btn btn-info'}), validators=[allowOnlyImages])
+    profile_picture = forms.ImageField(widget=forms.FileInput(attrs={'class':'btn btn-info'}), validators=[allowOnlyImages])
+    cover_photo = forms.ImageField(widget=forms.FileInput(attrs={'class':'btn btn-info'}), validators=[allowOnlyImages])
     class Meta:
         model = UserProfile
         fields = ['profile_picture', 'cover_photo', 'address', 'country', 'state', 'city','pin_code', 'latitude', 'longitude']

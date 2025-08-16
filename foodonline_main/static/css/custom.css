@@ -12,3 +12,7 @@
     animation-name: show-toast;
     animation-duration: 6s;
 }
+
+.main-search.fancy .field-holder input[type="text"] {
+   color: black !important;
+}
